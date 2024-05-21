@@ -1,0 +1,89 @@
+.screen-slider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.screen-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .modal-enter-active {
+        transition: transform 0.4s ease;
+    }
+    .modal-leave-active {
+        transition: transform 0.35s ease;
+    }
+    .modal-enter-from,
+    .modal-leave-to {
+        transform: translateX(100%);
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-enter-active {
+        transition: opacity 0.4s ease;
+    }
+    .modal-leave-active {
+        transition: opacity 0.25s ease;
+    }
+    .modal-enter-from,
+    .modal-leave-to {
+        opacity: 0;
+    }
+    .modal-enter-active .modal__container {
+        transition: transform 0.4s ease;
+    }
+    .modal-leave-active .modal__container {
+        transition: transform 0.25s ease;
+    }
+    .modal-enter-from .modal__container,
+    .modal-leave-to .modal__container {
+        transform: scale(1.05);
+    }
+}
+
+.bottom-modal-enter-active {
+    transition: opacity 0.4s ease;
+}
+.bottom-modal-leave-active {
+    transition: opacity 0.25s ease;
+}
+.bottom-modal-enter-from,
+.bottom-modal-leave-to {
+    opacity: 0;
+}
+.bottom-modal-enter-active .bottom-modal__container {
+    transition: transform 0.4s ease;
+}
+.bottom-modal-leave-active .bottom-modal__container {
+    transition: transform 0.25s ease;
+}
+.bottom-modal-enter-from .bottom-modal__container,
+.bottom-modal-leave-to .bottom-modal__container {
+    transform: translateY(100%);
+}
+
+.base-modal-enter-active {
+    transition: opacity 0.4s ease;
+}
+.base-modal-leave-active {
+    transition: opacity 0.25s ease;
+}
+.base-modal-enter-from,
+.base-modal-leave-to {
+    opacity: 0;
+}
+.base-modal-enter-active .base-modal__container {
+    transition: transform 0.4s ease;
+}
+.base-modal-leave-active .base-modal__container {
+    transition: transform 0.25s ease;
+}
+.base-modal-enter-from .base-modal__container,
+.base-modal-leave-to .base-modal__container {
+    transform: scale(1.05);
+}
